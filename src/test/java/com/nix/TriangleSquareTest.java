@@ -44,5 +44,14 @@ public class TriangleSquareTest {
         Assert.assertEquals(6, actual, 0.000);
     }
 
+    @Test
+    public void OnOneLine()
+    {
+        TriangleSquare.Point a = new TriangleSquare.Point(1,7);
+        TriangleSquare.Point b = new TriangleSquare.Point(1,6);
+        TriangleSquare.Point c = new TriangleSquare.Point(1,-2);
+        double actual = triangleSquareInstance.getSquare(a,b,c);
 
+        Assert.assertEquals(0, actual, 0.000);
+    }
 }
