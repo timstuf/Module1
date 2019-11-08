@@ -12,6 +12,11 @@ public class TriangleSquareTest {
         triangleSquareInstance = new TriangleSquare();
     }
 
+    @Test(expected = NullPointerException.class)
+    public void NullTest()
+    {
+        triangleSquareInstance.getSquare(null, new TriangleSquare.Point(1,2), new TriangleSquare.Point(1,2));
+    }
     @Test
     public void AllZeroTest()
     {

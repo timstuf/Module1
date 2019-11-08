@@ -5,6 +5,7 @@ public class TriangleSquare {
      Вычислить площадь  треугольника ABC.*/
     public double getSquare(Point a, Point b, Point c)
     {
+        if(a==null || b==null || c==null) throw new NullPointerException();
         return 1./2 * Math.abs((b.x-a.x)*(c.y-a.y) - (c.x-a.x)*(b.y-a.y));
     }
 
