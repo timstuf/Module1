@@ -2,6 +2,7 @@ package com.nix;
 
 public class Symbols {
     public boolean checkSymbols(String s) {
+        if(s==null) throw new NullPointerException();
         if(s.length()==0) return true;
         if (s.length() % 2 != 0) return false;
         char[] characters = s.toCharArray();

@@ -11,6 +11,13 @@ public class SymbolsTest {
     {
         symbolsInstance = new Symbols();
     }
+
+    @Test (expected = NullPointerException.class)
+    public void NullTest()
+    {
+        symbolsInstance.checkSymbols(null);
+    }
+
     @Test
     public void AllByThemselvesTest()
     {
