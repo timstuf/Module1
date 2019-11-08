@@ -2,6 +2,7 @@ package com.nix;
 
 public class LifeGame {
     public int[][] getNextState(int[][] field) {
+        if(field==null) throw new NullPointerException();
         if(field.length==0) return new int[0][0];
         int[][] nextState = new int[field.length][field[0].length];
 

@@ -11,6 +11,11 @@ public class LifeGameTest {
     {
         lifeGameInstance = new LifeGame();
     }
+    @Test (expected = NullPointerException.class)
+    public void NullTest()
+    {
+        lifeGameInstance.getNextState(null);
+    }
 
     @Test
     public void ZeroFieldTest()
